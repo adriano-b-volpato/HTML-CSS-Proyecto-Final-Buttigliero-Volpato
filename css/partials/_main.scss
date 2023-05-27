@@ -2,21 +2,13 @@ main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-image: url('../img/Eminem-background.jpg') !important;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 
 }
 
-.welcome {
-    background-color: $secondary_color;
-    color: black;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-family: $font_neue;
-    p {
-        font-weight: bold;
-        font-size: large;
-        
-    }
+body{
+    background-image: url('../img/Eminem-background.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
