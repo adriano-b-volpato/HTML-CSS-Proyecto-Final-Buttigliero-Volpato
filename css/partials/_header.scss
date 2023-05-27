@@ -1,0 +1,37 @@
+.nav {
+    font-family: $font_neue;
+    background-color: $secondary_color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 1rem;
+  
+    .logo {
+      width: 20rem;
+  
+      @media (max-width: 1079px) {
+        width: 10rem;
+      }
+      @media (max-width: 800px) {
+        width: 10rem;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    @media (max-width: 1079px) {
+      font-size: 0.75em;
+    }
+    @media (max-width: 800px) {
+      font-size: 0.75em;
+  
+      h2:not(:first-of-type) {
+        display: none;
+      }
+    }
+  }

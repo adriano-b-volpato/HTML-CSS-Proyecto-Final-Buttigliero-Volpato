@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/Eminem-background.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  font-family: "Helvetica Neue";
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1rem;
+}
+.nav .logo {
+  width: 20rem;
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.videos iframe {
+  margin-bottom: 2rem;
+  border-style: solid;
+  border-width: 1rem;
+  border-color: white;
+}
+
+.albums {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.albums-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.albums-list img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 2rem;
+  border-style: solid;
+  border-width: 1rem;
+  border-color: white;
+}
+
+.videos, .albums {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+}
+footer img {
+  width: 5rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@import url(//db.onlinewebfonts.com/c/b812035768ba3b9e92b0a01c747eecbd?family=Helvetica+Neue);
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("//db.onlinewebfonts.com/t/b812035768ba3b9e92b0a01c747eecbd.eot");
+  src: url("//db.onlinewebfonts.com/t/b812035768ba3b9e92b0a01c747eecbd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b812035768ba3b9e92b0a01c747eecbd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b812035768ba3b9e92b0a01c747eecbd.woff") format("woff"), url("//db.onlinewebfonts.com/t/b812035768ba3b9e92b0a01c747eecbd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b812035768ba3b9e92b0a01c747eecbd.svg#Helvetica Neue") format("svg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: white;
+}
+*::selection {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1rem;
+}
+.nav .logo {
+  width: 20rem;
+}
+@media (max-width: 1079px) {
+  .nav .logo {
+    width: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .nav .logo {
+    width: 10rem;
+  }
+}
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 1079px) {
+  .nav {
+    font-size: 0.75em;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    font-size: 0.75em;
+  }
+  .nav h2:not(:first-of-type) {
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url("../img/Eminem-background.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.welcome p {
+  font-weight: bold;
+  font-size: large;
+}
+
+.albums {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.albums .albums-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.albums .albums-list img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 2rem;
+  border-style: solid;
+  border-width: 1rem;
+  border-color: white;
+}
+
+/* 1996-2004 */
+.album-covers p.album-description {
+  background-color: white;
+  border: 4px solid black;
+  padding: 5px;
+  flex-grow: 1;
+}
+.album-covers img {
+  background-color: black;
+  border-color: black;
+}
+
+.third-page {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(2, 3fr);
+  grid-template-areas: "relapse-cover recovery-cover mmlp2-cover " "relapse-tracklist  recovery-tracklist mmlp2-tracklist";
+}
+.third-page .album-tracklist li {
+  margin-left: 2em;
+}
+.third-page img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: overflow;
+     object-fit: overflow;
+}
+.third-page .album-covers.relapse {
+  grid-area: relapse-cover;
+}
+.third-page .album-covers.recovery {
+  grid-area: recovery-cover;
+}
+.third-page .album-covers.mmlp2 {
+  grid-area: mmlp2-cover;
+}
+.third-page .album-tracklist.relapse {
+  grid-area: relapse-tracklist;
+}
+.third-page .album-tracklist.recovery {
+  grid-area: recovery-tracklist;
+}
+.third-page .album-tracklist.mmlp2 {
+  grid-area: mmlp2-tracklist;
+}
+
+/* 2017-2022 */
+.forth-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "revival-cover kamikaze-cover mtbmb-cover" "revival-cover kamikaze-cover mtbmb-cover" "revival-description kamikaze-description mtbmb-description" "revival-tracklist kamikaze-tracklist mtbmb-tracklist";
+}
+.forth-page .album-description {
+  background-color: white;
+  border: 4px solid black;
+  padding: 5px;
+  flex-grow: 1;
+}
+.forth-page .album-covers.revival {
+  grid-area: revival-cover;
+}
+.forth-page .album-covers.kamikaze {
+  grid-area: kamikaze-cover;
+}
+.forth-page .album-covers.mtbmb {
+  grid-area: mtbmb-cover;
+}
+.forth-page .album-description.revival {
+  grid-area: revival-description;
+}
+.forth-page .album-description.kamikaze {
+  grid-area: kamikaze-description;
+}
+.forth-page .album-description.mtbmb {
+  grid-area: mtbmb-description;
+}
+.forth-page .album-tracklist.revival {
+  grid-area: revival-tracklist;
+}
+.forth-page .album-tracklist.kamikaze {
+  grid-area: kamikaze-tracklist;
+}
+.forth-page .album-tracklist.mtbmb {
+  grid-area: mtbmb-tracklist;
+}
+
+/* Who is Eminem? */
+.eminem-photo {
+  border: 5px solid white;
+}
+
+.who-is {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.eminem-bio-1 p {
+  background-color: white;
+  border: 5px solid black;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+}
+footer img {
+  width: 5rem;
+}
+
+@media (max-width: 1079px) { /* Responsive por mediaquery de la tercera página */
+  .third-page {
+    grid-template-areas: "relapse-cover relapse-cover relapse-cover" "relapse-tracklist relapse-tracklist relapse-tracklist" "recovery-cover recovery-cover recovery-cover" "recovery-tracklist recovery-tracklist recovery-tracklist" "mmlp2-cover mmlp2-cover mmlp2-cover" "mmlp2-tracklist mmlp2-tracklist mmlp2-tracklist";
+  }
+}
+@media (max-width: 768px) { /* media query para la foto de Eminem */
+  .eminem-photo {
+    max-width: 80%;
+  }
+}/*# sourceMappingURL=estilo.css.map */

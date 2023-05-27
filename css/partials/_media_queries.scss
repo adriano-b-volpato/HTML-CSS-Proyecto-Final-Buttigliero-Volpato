@@ -1,0 +1,17 @@
+@media (max-width: 1079px) { /* Responsive por mediaquery de la tercera página */
+    .third-page {
+    grid-template-areas:
+    "relapse-cover relapse-cover relapse-cover"
+    "relapse-tracklist relapse-tracklist relapse-tracklist"
+    "recovery-cover recovery-cover recovery-cover"
+    "recovery-tracklist recovery-tracklist recovery-tracklist"
+    "mmlp2-cover mmlp2-cover mmlp2-cover"
+    "mmlp2-tracklist mmlp2-tracklist mmlp2-tracklist"
+    }
+}
+
+@media (max-width: 768px) { /* media query para la foto de Eminem */
+    .eminem-photo {
+      max-width: 80%;
+    }
+  }

@@ -1,0 +1,36 @@
+main {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.videos {
+	iframe {
+		margin-bottom: 2rem;
+		border-style: solid;
+		border-width: 1rem;
+		border-color: white;
+	}
+}
+.albums {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.albums-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	img {
+		width: 20rem;
+		height: 20rem;
+		object-fit: cover;
+		margin-bottom: 2rem;
+		border-style: solid;
+		border-width: 1rem;
+		border-color: white;
+	}
+}
+.videos, .albums {
+	display: flex;
+	flex-wrap: wrap;
+}
