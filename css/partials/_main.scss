@@ -12,3 +12,11 @@ body{
     background-size: cover;
     
 }
+
+.img {
+    transition: opacity 0.3s ease;
+}
+
+.img-thumbnail:hover {
+    opacity: 0.5;
+}

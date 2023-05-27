@@ -2,9 +2,13 @@ footer {
     display: flex;
     justify-content: end;
     padding-top: 2rem;
+    padding-right: 2rem;
     img {
         width: 5rem;
-}
+    }
+    img:hover {
+        opacity: 0.5;
+    }
 
 
 }

@@ -16,29 +16,8 @@
     }
   }
 
-
-  @media (max-width: 768px) {
-    .hero-photo {
-      width: 100%;
-    }
-  
-    .hero h2 {
-      max-width: 100%;
-    }
-  }
-
-
-  @media (max-width: 1280px) {
-    .spotify .songs
-    {
-      display: flex;
-      flex-direction: column;
-      
-    }
-
-  }
-
-  @media (max-width: 1280px) {
+  /*Para index*/
+  @media (max-width: 1280px) {/* Para la sección hero, la fota y el heading */
     .hero {
 
       .hero-photo
@@ -51,6 +30,32 @@
 
 
     }
+
+
+  @media (max-width: 1280px) { /* Para la sección del embed de spotify */
+    .spotify {
+        .songs
+        {
+           display: flex;
+           flex-direction: column;
+        
+        }
+
+        p {
+          padding-right: 2rem;
+          padding-left: 2rem;
+        }
+
+
+
+    } 
+    
+    
+
+
+  }
+
+  
 
 
 
