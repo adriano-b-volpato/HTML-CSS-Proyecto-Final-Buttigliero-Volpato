@@ -1,5 +1,5 @@
-.nav {
-    font-family: $font_neue;
+.navbar {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: $secondary_color;
     display: flex;
     justify-content: space-between;
@@ -7,31 +7,24 @@
     padding: 1rem;
     border-style: solid;
     border-width: 1rem;
+    font-size: 1.3rem;
   
     .logo {
-      width: 20rem;
+      width: 15rem;
   
-      @media (max-width: 1079px) {
-        width: 10rem;
-      }
-      @media (max-width: 800px) {
-        width: 10rem;
-      }
-    }
-  
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  
-    @media (max-width: 1079px) {
-      font-size: 0.75em;
-    }
-    @media (max-width: 800px) {
-      font-size: 0.75em;
-  
-      h2:not(:first-of-type) {
-        display: none;
-      }
+    
+  }
+
+  ul.navbar-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+
+    li {
+      flex-grow: 1;
+      text-align: center;
     }
   }
+}
