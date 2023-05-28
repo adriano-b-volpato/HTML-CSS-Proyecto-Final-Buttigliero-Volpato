@@ -78,11 +78,10 @@
 
 }
 
+
 @media (max-width: 768px) { /*Previene que el texto principal de who is eminem sea muy largo en pantallas pequeñas a travez del uso de una scroll bar */
-
-  overflow: auto;
+  p {
+    overflow: auto;
     max-height: 200px;
-
-
-
+  }
 }
