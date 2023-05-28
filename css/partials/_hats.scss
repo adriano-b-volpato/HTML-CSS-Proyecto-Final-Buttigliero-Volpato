@@ -1,0 +1,47 @@
+.hats {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 8fr 1fr;
+    column-gap: 5rem;
+    padding: 2rem;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-areas: 
+    "hat1 hat2"
+    "hat1_text hat2_text";
+
+    
+    .hat1 {
+        grid-area: hat1;
+    }
+
+    .hat2 {
+        grid-area: hat2;
+    }
+
+    .hat1_text {
+        grid-area: hat1_text;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .hat2_text {
+        grid-area: hat2_text;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+        
+    }
+
+
+    img {
+        width: 100%;
+         }
+    
+}
+
+
+
+
