@@ -1,15 +1,3 @@
-@media (max-width: 1079px) {
-  /* Responsive por mediaquery de la tercera página */
-  .third-page {
-    grid-template-areas:
-      "relapse-cover relapse-cover relapse-cover"
-      "relapse-tracklist relapse-tracklist relapse-tracklist"
-      "recovery-cover recovery-cover recovery-cover"
-      "recovery-tracklist recovery-tracklist recovery-tracklist"
-      "mmlp2-cover mmlp2-cover mmlp2-cover"
-      "mmlp2-tracklist mmlp2-tracklist mmlp2-tracklist";
-  }
-}
 
 @media (max-width: 768px) {
   /* media query para la foto de Eminem */
@@ -76,4 +64,25 @@
       "hat2"
       "hat2_text";
   }
+}
+
+
+@media (max-width: 768px) { /*Para evitar que las fotos en Collaboraters se corten en los bordes */
+
+  .collaborators {
+    img {
+        max-width: 95%;
+  }
+
+  }
+
+}
+
+@media (max-width: 768px) { /*Previene que el texto principal de who is eminem sea muy largo en pantallas pequeñas a travez del uso de una scroll bar */
+
+  overflow: auto;
+    max-height: 200px;
+
+
+
 }
