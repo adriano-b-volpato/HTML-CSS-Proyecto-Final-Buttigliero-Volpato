@@ -1,68 +1,79 @@
-@media (max-width: 1079px) { /* Responsive por mediaquery de la tercera página */
-    .third-page {
+@media (max-width: 1079px) {
+  /* Responsive por mediaquery de la tercera página */
+  .third-page {
     grid-template-areas:
-    "relapse-cover relapse-cover relapse-cover"
-    "relapse-tracklist relapse-tracklist relapse-tracklist"
-    "recovery-cover recovery-cover recovery-cover"
-    "recovery-tracklist recovery-tracklist recovery-tracklist"
-    "mmlp2-cover mmlp2-cover mmlp2-cover"
-    "mmlp2-tracklist mmlp2-tracklist mmlp2-tracklist"
-    }
+      "relapse-cover relapse-cover relapse-cover"
+      "relapse-tracklist relapse-tracklist relapse-tracklist"
+      "recovery-cover recovery-cover recovery-cover"
+      "recovery-tracklist recovery-tracklist recovery-tracklist"
+      "mmlp2-cover mmlp2-cover mmlp2-cover"
+      "mmlp2-tracklist mmlp2-tracklist mmlp2-tracklist";
+  }
 }
 
-@media (max-width: 768px) { /* media query para la foto de Eminem */
-    .eminem-photo {
-      max-width: 80%;
+@media (max-width: 768px) {
+  /* media query para la foto de Eminem */
+  .eminem-photo {
+    max-width: 80%;
+  }
+}
+
+/*Para index*/
+@media (max-width: 1280px) {
+  /* Para la sección hero, la fota y el heading */
+  .hero {
+    .hero-photo {
+      width: 80%;
+    }
+    h2 {
+      width: 80%;
     }
   }
 
-  /*Para index*/
-  @media (max-width: 1280px) {/* Para la sección hero, la fota y el heading */
-    .hero {
-
-      .hero-photo
-      {
-        width: 80%;
-      }
-      h2 {
-        width: 80%;
-      }
-
-
-    }
-
-
-  @media (max-width: 1280px) { /* Para la sección del embed de spotify */
+  @media (max-width: 1280px) {
+    /* Para la sección del embed de spotify */
     .spotify {
-        .songs
-        {
-           display: flex;
-           flex-direction: column;
-        
-        }
+      .songs {
+        display: flex;
+        flex-direction: column;
+      }
 
-        p {
-          padding-right: 2rem;
-          padding-left: 2rem;
-        }
-
-
-
-    } 
-    
-    
-
-
+      p {
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
+    }
   }
+}
 
-  
-
-
-
-
-
+@media (max-width: 1220px) {
+  /*Responsive para la sección de sweatshirts en merchandise */
+  .sweatshirts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr 5fr 1fr;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "sweatshirt1"
+      "sweatshirt1_text"
+      "sweatshirt2"
+      "sweatshirt2_text";
   }
+}
 
-
-
-
+@media (max-width: 1220px) {
+  /*Responsive para la sección de hats en merchandise */
+  .hats {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr 5fr 1fr;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "hat1"
+      "hat1_text"
+      "hat2"
+      "hat2_text";
+  }
+}

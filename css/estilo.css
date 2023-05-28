@@ -204,10 +204,10 @@ body {
 .sweatshirts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 8fr 1fr;
+  grid-template-rows: 4fr 1fr;
   -moz-column-gap: 5rem;
        column-gap: 5rem;
-  padding: 10rem;
+  padding: 1rem;
   justify-content: center;
   grid-auto-flow: column;
   grid-template-areas: "sweatshirt1 sweatshirt2" "sweatshirt1_text sweatshirt2_text";
@@ -237,15 +237,15 @@ body {
 .hats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 8fr 1fr;
+  grid-template-rows: 4fr 1fr;
   -moz-column-gap: 5rem;
        column-gap: 5rem;
-  padding: 2rem;
+  padding: 1rem;
   justify-content: center;
   grid-auto-flow: column;
   grid-template-areas: "hat1 hat2" "hat1_text hat2_text";
 }
-.hats .hat1 {
+.hats .hatt1 {
   grid-area: hat1;
 }
 .hats .hat2 {
@@ -294,18 +294,21 @@ footer img:hover {
   opacity: 0.5;
 }
 
-@media (max-width: 1079px) { /* Responsive por mediaquery de la tercera página */
+@media (max-width: 1079px) {
+  /* Responsive por mediaquery de la tercera página */
   .third-page {
     grid-template-areas: "relapse-cover relapse-cover relapse-cover" "relapse-tracklist relapse-tracklist relapse-tracklist" "recovery-cover recovery-cover recovery-cover" "recovery-tracklist recovery-tracklist recovery-tracklist" "mmlp2-cover mmlp2-cover mmlp2-cover" "mmlp2-tracklist mmlp2-tracklist mmlp2-tracklist";
   }
 }
-@media (max-width: 768px) { /* media query para la foto de Eminem */
+@media (max-width: 768px) {
+  /* media query para la foto de Eminem */
   .eminem-photo {
     max-width: 80%;
   }
 }
 /*Para index*/
-@media (max-width: 1280px) { /* Para la sección hero, la fota y el heading */
+@media (max-width: 1280px) {
+  /* Para la sección hero, la fota y el heading */
   .hero .hero-photo {
     width: 80%;
   }
@@ -313,7 +316,8 @@ footer img:hover {
     width: 80%;
   }
 }
-@media (max-width: 1280px) and (max-width: 1280px) { /* Para la sección del embed de spotify */
+@media (max-width: 1280px) and (max-width: 1280px) {
+  /* Para la sección del embed de spotify */
   .spotify .songs {
     display: flex;
     flex-direction: column;
@@ -321,5 +325,27 @@ footer img:hover {
   .spotify p {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+}
+@media (max-width: 1220px) {
+  /*Responsive para la sección de sweatshirts en merchandise */
+  .sweatshirts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr 5fr 1fr;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-areas: "sweatshirt1" "sweatshirt1_text" "sweatshirt2" "sweatshirt2_text";
+  }
+}
+@media (max-width: 1220px) {
+  /*Responsive para la sección de hats en merchandise */
+  .hats {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr 5fr 1fr;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-areas: "hat1" "hat1_text" "hat2" "hat2_text";
   }
 }/*# sourceMappingURL=estilo.css.map */

@@ -2,9 +2,9 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 8fr 1fr;
+    grid-template-rows: 4fr 1fr;
     column-gap: 5rem;
-    padding: 2rem;
+    padding:1rem;
     justify-content: center;
     grid-auto-flow: column;
     grid-template-areas: 
@@ -12,7 +12,7 @@
     "hat1_text hat2_text";
 
     
-    .hat1 {
+    .hatt1 {
         grid-area: hat1;
     }
 
@@ -38,10 +38,6 @@
 
     img {
         width: 100%;
-         }
+    }
     
 }
-
-
-
-

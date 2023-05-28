@@ -2,9 +2,9 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 8fr 1fr;
+    grid-template-rows: 4fr 1fr;
     column-gap: 5rem;
-    padding: 10rem;
+    padding:1rem;
     justify-content: center;
     grid-auto-flow: column;
     grid-template-areas: 
@@ -41,7 +41,3 @@
     }
     
 }
-
-
-
-
