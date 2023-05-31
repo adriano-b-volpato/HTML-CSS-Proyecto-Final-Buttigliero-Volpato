@@ -1,0 +1,27 @@
+.collectibles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+      .merchandise-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        .merchandise-text {
+          font-size: 1.2rem;
+          margin: 10px 0;
+          background-color: black;
+          color: red;
+          width: 100%;
+          flex: 1;
+        }
+
+      }
+  }

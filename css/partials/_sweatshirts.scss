@@ -1,43 +1,72 @@
-.sweatshirts {
+// .sweatshirts {
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 4fr 1fr;
-    column-gap: 5rem;
-    padding:1rem;
-    justify-content: center;
-    grid-auto-flow: column;
-    grid-template-areas: 
-    "sweatshirt1 sweatshirt2"
-    "sweatshirt1_text sweatshirt2_text";
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: 4fr 1fr;
+//     column-gap: 5rem;
+//     padding:1rem;
+//     justify-content: center;
+//     grid-auto-flow: column;
+//     grid-template-areas: 
+//     "sweatshirt1 sweatshirt2"
+//     "sweatshirt1_text sweatshirt2_text";
 
     
-    .sweatshirt1 {
-        grid-area: sweatshirt1;
-    }
+//     .sweatshirt1 {
+//         grid-area: sweatshirt1;
+//     }
 
-    .sweatshirt2 {
-        grid-area: sweatshirt2;
-    }
+//     .sweatshirt2 {
+//         grid-area: sweatshirt2;
+//     }
 
-    .sweatshirt1_text {
-        grid-area: sweatshirt1_text;
-        background-color: black;
-        color: white;
-        font-size: 1.5rem;
-    }
+//     .sweatshirt1_text {
+//         grid-area: sweatshirt1_text;
+//         background-color: black;
+//         color: white;
+//         font-size: 1.5rem;
+//     }
 
-    .sweatshirt2_text {
-        grid-area: sweatshirt2_text;
-        background-color: black;
-        color: white;
-        font-size: 1.5rem;
+//     .sweatshirt2_text {
+//         grid-area: sweatshirt2_text;
+//         background-color: black;
+//         color: white;
+//         font-size: 1.5rem;
         
-    }
+//     }
 
 
-    img {
-        width: 100%;
-    }
+//     img {
+//         width: 100%;
+//     }
     
-}
+// }
+
+
+.sweatshirts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+      .merchandise-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        .merchandise-text {
+          font-size: 1.2rem;
+          margin: 10px 0;
+          background-color: black;
+          color: red;
+          width: 100%;
+          flex: 1;
+        }
+      }
+  }
+  
