@@ -111,6 +111,11 @@ body {
   width: 100%;
   height: auto;
 }
+.sweatshirts img:hover {
+  border: solid;
+  border-color: red;
+  border-width: 1rem;
+}
 .sweatshirts .merchandise-item {
   display: flex;
   flex-direction: column;
@@ -135,6 +140,11 @@ body {
   width: 100%;
   height: auto;
 }
+.hats img:hover {
+  border: solid;
+  border-color: red;
+  border-width: 1rem;
+}
 .hats .merchandise-item {
   display: flex;
   flex-direction: column;
@@ -158,6 +168,11 @@ body {
 .collectibles img {
   width: 100%;
   height: auto;
+}
+.collectibles img:hover {
+  border: solid;
+  border-color: red;
+  border-width: 1rem;
 }
 .collectibles .merchandise-item {
   display: flex;

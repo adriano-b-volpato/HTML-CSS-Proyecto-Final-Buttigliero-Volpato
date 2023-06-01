@@ -7,6 +7,11 @@
       width: 100%;
       height: auto;
     }
+    img:hover {
+        border: solid;
+        border-color: red;
+        border-width: 1rem;
+    }
   
       .merchandise-item {
         display: flex;
