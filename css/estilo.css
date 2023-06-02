@@ -277,29 +277,22 @@ footer img:hover {
     padding-left: 2rem;
   }
 }
-@media (max-width: 1220px) {
-  /*Responsive para la sección de sweatshirts en merchandise */
+@media (max-width: 1280px) { /* 3 media queries for the 3 sections of Merchandise so they are responsive */
   .sweatshirts {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr 5fr 1fr;
-    justify-content: center;
-    grid-auto-flow: column;
-    grid-template-areas: "sweatshirt1" "sweatshirt1_text" "sweatshirt2" "sweatshirt2_text";
   }
 }
-@media (max-width: 1220px) {
-  /*Responsive para la sección de hats en merchandise */
+@media (max-width: 1280px) {
   .hats {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr 5fr 1fr;
-    justify-content: center;
-    grid-auto-flow: column;
-    grid-template-areas: "hat1" "hat1_text" "hat2" "hat2_text";
   }
 }
-@media (max-width: 768px) { /*Para evitar que las fotos en Collaboraters se corten en los bordes */
+@media (max-width: 1280px) {
+  .collectibles {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) { /*Para evitar que las fotos en Collaborators se corten en los bordes */
   .collaborators img {
     max-width: 95%;
   }
