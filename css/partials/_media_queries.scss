@@ -35,27 +35,14 @@
 }
 
 
-@media (max-width:1280px) { /* 3 media queries for the 3 sections of Merchandise so they are responsive */
+@media (max-width:1280px) { /* For the 3 sections of Merchandise so they are responsive */
 
-    .sweatshirts {
+    .sweatshirts, .hats, .collectibles {
       grid-template-columns: 1fr;
     }
 }
 
-@media (max-width:1280px) {
 
-  .hats {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-@media (max-width:1280px) {
-
-  .collectibles {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 
