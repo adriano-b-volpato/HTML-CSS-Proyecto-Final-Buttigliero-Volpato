@@ -31,6 +31,15 @@
         border-width: 1rem;
         grid-area: portrait;
     }
+
+    img:hover, iframe:hover {
+        transform: scale(1.2);
+    }
+
+    img, iframe {
+         transition: transform 0.4s ease;
+    }
+
     p {
         padding: 0.5rem;
         margin-top: 0.5rem;

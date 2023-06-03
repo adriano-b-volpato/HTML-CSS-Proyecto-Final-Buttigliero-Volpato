@@ -1,0 +1,8 @@
+.merchandise-item {
+    transition: transform 0.5s ease;
+}
+
+.merchandise-item:hover{
+  transform: scale(1.15);
+}
+

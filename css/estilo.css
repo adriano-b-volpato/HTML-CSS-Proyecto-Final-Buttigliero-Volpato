@@ -53,14 +53,6 @@ body {
   background-size: cover;
 }
 
-.img-thumbnail {
-  transition: opacity 0.3s ease;
-}
-
-.img-thumbnail:hover {
-  opacity: 0.5;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -91,6 +83,9 @@ body {
   gap: 2rem;
 }
 
+.album-covers {
+  transition: transform 0.5s ease;
+}
 .album-covers p.album-description {
   background-color: white;
   border: 4px solid black;
@@ -100,6 +95,22 @@ body {
 .album-covers img {
   background-color: black;
   border-color: black;
+}
+.album-covers img:hover {
+  border: solid;
+  border-color: black;
+  border-width: 0.5rem;
+}
+.album-covers > :hover {
+  transform: scale(1.1);
+}
+
+.merchandise-item {
+  transition: transform 0.5s ease;
+}
+
+.merchandise-item:hover {
+  transform: scale(1.15);
 }
 
 .sweatshirts {
@@ -114,7 +125,7 @@ body {
 .sweatshirts img:hover {
   border: solid;
   border-color: red;
-  border-width: 1rem;
+  border-width: 0.5rem;
 }
 .sweatshirts .merchandise-item {
   display: flex;
@@ -143,7 +154,7 @@ body {
 .hats img:hover {
   border: solid;
   border-color: red;
-  border-width: 1rem;
+  border-width: 0.5rem;
 }
 .hats .merchandise-item {
   display: flex;
@@ -172,7 +183,7 @@ body {
 .collectibles img:hover {
   border: solid;
   border-color: red;
-  border-width: 1rem;
+  border-width: 0.5rem;
 }
 .collectibles .merchandise-item {
   display: flex;
@@ -210,6 +221,12 @@ body {
   border-color: black;
   border-width: 1rem;
   grid-area: portrait;
+}
+.dr_dre img:hover, .dr_dre iframe:hover, .fifty_cent img:hover, .fifty_cent iframe:hover, .royce img:hover, .royce iframe:hover {
+  transform: scale(1.2);
+}
+.dr_dre img, .dr_dre iframe, .fifty_cent img, .fifty_cent iframe, .royce img, .royce iframe {
+  transition: transform 0.4s ease;
 }
 .dr_dre p, .fifty_cent p, .royce p {
   padding: 0.5rem;
