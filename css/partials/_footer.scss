@@ -1,14 +1,24 @@
 footer {
-    display: flex;
-    justify-content: end;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    img {
-        width: 5rem;
-    }
-    img:hover {
-        opacity: 0.5;
-    }
+  display: flex;
+  justify-content: end;
+  padding-top: 2rem;
+  padding-right: 2rem;
 
-
+  
+  .fa-brands:hover {
+    transform: scale(1.1);
+  }
 }
+
+$redes: (
+    facebook: rgb(30, 85, 196),
+    youtube: rgb(255, 0, 0),
+    twitter: rgb(29, 161, 242),
+    instagram: rgb(193, 53, 132),
+  );
+
+  @each $redsocial, $color in $redes {
+    .fa-#{$redsocial} {
+      color: $color;
+    }
+  }

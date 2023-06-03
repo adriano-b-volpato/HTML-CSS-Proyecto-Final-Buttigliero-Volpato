@@ -1,6 +1,6 @@
 
 @media (max-width: 768px) {
-  /* media query para la foto de Eminem */
+  /* media query para la foto de Eminem en who is eminem */
   .eminem-photo {
     max-width: 80%;
   }
@@ -8,7 +8,7 @@
 
 /*Para index*/
 @media (max-width: 1280px) {
-  /* Para la sección hero, la fota y el heading */
+  /* Para la sección hero, la foto y el heading */
   .hero {
     .hero-photo {
       width: 80%;
@@ -29,6 +29,7 @@
       p {
         padding-right: 2rem;
         padding-left: 2rem;
+        height:fit-content;
       }
     }
   }

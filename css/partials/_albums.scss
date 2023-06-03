@@ -1,7 +1,7 @@
 .discography {
   .first-era {
     .album-covers {
-      transition: all 0.3s ease;
+      
 
       p.album-description {
         background-color: $secondary_color;
@@ -14,7 +14,8 @@
         background-color: black;
         border-color: black;
       }
-
+      
+      transition: all 0.3s ease;
       img:hover,
       p:hover {
         border: solid;
@@ -22,26 +23,14 @@
         border-width: 0.25rem;
         transform: scale(1.1);
       }
-      .infinite {
-        transition-delay: 0.2s;
-      }
-      .sslp {
-        transition-delay: 0.4s;
-      }
-      .mmlp {
-        transition-delay: 0.6s;
-      }
-      .tes {
-        transition-delay: 0.8s;
-      }
-      .encore {
-        transition-delay: 1s;
-      }
-
-
-
-
-
     }
+    @for $album_number from 1 through 5 { /*Makes each album cover and description take 0.15s extra to complete the animation */
+
+      .album#{$album_number} {
+        animation-delay: $album_number*0.15s;
+      }
+    }
+
+
   }
 }
