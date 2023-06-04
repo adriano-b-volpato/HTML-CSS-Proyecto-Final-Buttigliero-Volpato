@@ -133,92 +133,40 @@ body {
   transform: scale(1.15);
 }
 
-.sweatshirts {
+.sweatshirts, .collectibles, .hats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.sweatshirts img {
+.sweatshirts img, .collectibles img, .hats img {
   width: 100%;
   height: auto;
+  border-radius: 0.5rem;
 }
-.sweatshirts img:hover {
+.sweatshirts img:hover, .collectibles img:hover, .hats img:hover {
   border: solid;
   border-color: red;
   border-width: 0.5rem;
 }
-.sweatshirts .merchandise-item {
+.sweatshirts .merchandise-item, .collectibles .merchandise-item, .hats .merchandise-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.sweatshirts .merchandise-item .merchandise-text {
+.sweatshirts .merchandise-item .merchandise-text, .collectibles .merchandise-item .merchandise-text, .hats .merchandise-item .merchandise-text {
   font-size: 1.2rem;
   margin: 10px 0;
   background-color: black;
   color: red;
   width: 100%;
   flex: 1;
+  border-radius: 0.5rem;
 }
 
-.hats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.hats img {
-  width: 100%;
-  height: auto;
-}
-.hats img:hover {
-  border: solid;
-  border-color: red;
-  border-width: 0.5rem;
-}
-.hats .merchandise-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.hats .merchandise-item .merchandise-text {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  background-color: black;
-  color: red;
-  width: 100%;
-  flex: 1;
-}
+.hats { /* _sweatshirs.scss for reference */ }
 
-.collectibles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.collectibles img {
-  width: 100%;
-  height: auto;
-}
-.collectibles img:hover {
-  border: solid;
-  border-color: red;
-  border-width: 0.5rem;
-}
-.collectibles .merchandise-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.collectibles .merchandise-item .merchandise-text {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  background-color: black;
-  color: red;
-  width: 100%;
-  flex: 1;
-}
+.collectibles { /* _sweatshirs.scss for reference */ }
 
 .container.collaborators {
   display: flex;
